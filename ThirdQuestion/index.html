@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+        <body>
+            <div class="div">
+                <p>3. How many countries are there in total in the world?</p>
+                <input type="radio" name="Staat" onclick="StaatCheck(2)">ca. 850</input>
+                <input type="radio" name="Staat" onclick="StaatCheck(1)">ca. 700</input>
+                <input type="radio" name="Staat" onclick="StaatCheck(3)">ca. 1000</input>
+            </div>
+            <br><div id="StaatCheck"></div>
+            <br><a href="../index.html" class="button">Back</a>
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" alt="Here should be a picture of the world" id="worldimg" hidden></img>
+        </body>
+        
+    <script type="text/javascript">
+        function StaatCheck(answer){
+            var StaatCheck = document.getElementById("StaatCheck");            
+            if (answer===3) {
+                StaatCheck.innerText = "Whith each island there are a total of 994 countries on earth.";
+                var worldimg = document.getElementById("worldimg")
+                worldimg.hidden = false
+            }
+            else if (answer===1) {
+                StaatCheck.innerText = "700 isn't enough, but did you know that there are 7.53 million people in the world (as of 2017)?";
+            }
+            else if (answer===2) {
+                StaatCheck.innerText = "800 isn't right, but did you know that there are 7.53 million people in the world (as of 2017)?";
+            }
+        }
+    </script>
+</html>

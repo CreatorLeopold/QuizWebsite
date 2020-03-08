@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+p {
+    color: white;
+    font-size: larger;
+    text-align: center;
+    font-style: italic;
+}
+.button {
+    padding: 3px 8px 3px 8px;
+    background-color: white;
+    color: black;
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+}
+.wiki {
+    font-size: x-large;
+    margin-top: 100px;
+    font-style: italic;
+    margin-left: 50px;
+    margin-right: 50px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+        <body>
+            <div class="selection">
+                <p>1. How many federal states does Germany have?</p>
+                <input type="radio" name="Bundeslaender" onclick="bundeslaenderCheck(12)" >12</input>
+                <input type="radio" name="Bundeslaender" onclick="bundeslaenderCheck(16)">16</input>
+                <input type="radio" name="Bundeslaender" onclick="bundeslaenderCheck(21)">21</input>
+            </div>
+            <br><div id="bundeslaenderCheck"></div>
+            <br><a href="../SecondQuestion/index.html" class="button">Next</a>
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Deutschland_politisch_2010.png" alt="Here should be a picture of Germany" id="mapimg" hidden></img>
+        </body>
+        
+    <script type="text/javascript">
+        function bundeslaenderCheck(answer){
+            var bundeslaenderCheck = document.getElementById("bundeslaenderCheck"); 
+            if (answer===16) {
+                bundeslaenderCheck.innerText = "16 is absolutly right!";
+                var mapimg = document.getElementById("mapimg");
+                mapimg.hidden = false;
+            }
+            else if (answer===21) {
+                bundeslaenderCheck.innerText = "That is general knowledge, of course 21 is false";
+            }
+            else if (answer===12) {
+                bundeslaenderCheck.innerText = "That is general knowledge, of course 12 is false";
+            }
+        }
+    </script>
+</html>

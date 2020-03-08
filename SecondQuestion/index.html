@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+        <body>
+            <div class="div">
+                <p>2. What is the capital of China?</p>
+                <input type="radio" name="Hauptstadt" onclick="HauptstadtCheck(2)">Tokyo</input>
+                <input type="radio" name="Hauptstadt" onclick="HauptstadtCheck(1)">Peking</input>
+                <input type="radio" name="Hauptstadt" onclick="HauptstadtCheck(3)">Bangkok</input>
+            </div>
+            <br><div id="HauptstadtCheck"></div>
+            <br><a href="../ThirdQuestion/index.html" class="button">Next</a>
+            <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Beijing_skyline_from_northeast_4th_ring_road.jpg/640px-Beijing_skyline_from_northeast_4th_ring_road.jpg" alt="Here should be a picture of Peking" id="cityimg" hidden></img>
+        </body>
+        
+    <script type="text/javascript">
+        function HauptstadtCheck(answer){
+            var HauptstadtCheck = document.getElementById("HauptstadtCheck");            
+            if (answer===1) {
+                HauptstadtCheck.innerText = "That's right. Did you know that Peking has 21,54 million inhabitants?";
+                var cityimg = document.getElementById("cityimg");
+                cityimg.hidden = false;
+            }
+            else if (answer===2) {
+                HauptstadtCheck.innerText = "Tokyo is false.";
+            }
+            else if (answer===3) {
+                HauptstadtCheck.innerText = "Bankok is false."
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-size: larger;
+}
+p {
+    background-color: black;
+    color: white;
+}
+.selection {
+    background-color: black;
+    color: white;
+}
+div {
+    background-color: black;
+    color: white;
+
+}
+a {
+    background-color: black;
+    color: white;
+}
+img {
+    border: none;
+    width: 35%;
+    
+}
